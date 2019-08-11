@@ -22,5 +22,11 @@ module.exports = {
     })
     console.log(name,icon)
     return res.json(cat)
+  },
+
+  //deleta
+  async delete(req,res){
+    const cat = await Categoria.findByIdAndRemove(req.params.categoriaId)
+    return res.json({Message:"Categoria Deletada com Sucesso", Data: cat})
   }
 }

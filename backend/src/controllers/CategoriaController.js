@@ -9,6 +9,11 @@ module.exports = {
     })
   },
 
+  findOne(req ,res) {
+    Categoria.findById(req.params.categoriaId).then(categoria => {
+      res.send(categoria);
+    })
+  },
   async index(req,res) {
     const cat = await Categoria.find()
     return res.json(cat)

@@ -1,0 +1,52 @@
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+}
+
+footer {
+  background: #f3f1f1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #7159c1;
+}
+
+.navName{
+  color: #7159c1;
+  font-size: 26px;
+}
+
+.navNameB{
+  color: #7159c1;
+  font-size: 18px;
+}
+
+.NavTexto{
+  color: #7159c1;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.color1{
+  color: #7159c1;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.teste2{
+  border: 0px;
+}
+
+.espaco{
+  margin-top: 5%;
+}
+
+a{
+  color: #7159c1;
+}

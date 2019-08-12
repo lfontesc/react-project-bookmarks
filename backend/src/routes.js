@@ -9,14 +9,16 @@ routes.get('/',(req,res) => {
 });
 
 //cadastrar
-routes.post('/api/addcateoria', CategoriaController.store)
+routes.post('/api/addcategoria', CategoriaController.store)
 routes.post('/api/addfavorito', FavoritoController.store)
 // listar 
 routes.get('/api/categorias', CategoriaController.index)
 routes.get('/api/favoritos', FavoritoController.index)
+//listar unico
+routes.get('/api/categoria/:categoriaId', CategoriaController.findOne)
 // Alterar
     //não fazer por enquanto
-    
+
 // Deletar
 routes.delete('/deleteFavorito/:favoritoId', FavoritoController.delete)
 routes.delete('/deleteCategoria/:categoriaId', CategoriaController.delete)

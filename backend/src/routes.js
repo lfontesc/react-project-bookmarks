@@ -12,6 +12,7 @@ routes.get('/',(req,res) => {
 //cadastrar
 routes.post('/api/addcategoria', CategoriaController.store)
 routes.post('/api/addfavorito', FavoritoController.store)
+routes.post('/api/user', UserController.store)
 // listar 
 routes.get('/api/categorias', CategoriaController.index)
 routes.get('/api/favoritos', FavoritoController.index)

@@ -25,4 +25,6 @@ routes.get('/api/categoria/:categoriaId', CategoriaController.findOne)
 // Deletar
 routes.delete('/deleteFavorito/:favoritoId', FavoritoController.delete)
 routes.delete('/deleteCategoria/:categoriaId', CategoriaController.delete)
+routes.delete('/deleteUser/:userId', UserController.delete)
+
 module.exports = routes;

@@ -14,5 +14,10 @@ module.exports = {
     })
     return res.json(user)
   },
+  //deleta
+  async delete(req,res){
+    const user = await User.findByIdAndRemove(req.params.userId)
+    return res.json({Message:"Usuario Deletado com Sucesso", Data: user})
+  }
 
 }
